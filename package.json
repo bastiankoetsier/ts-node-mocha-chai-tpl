@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "tsc",
-    "test": "mocha"
+    "clean" :"rm -rf dist/*",
+    "pretest": "npm run clean && tsc",
+    "test": "mocha dist/test"
   },
   "keywords": [],
   "author": "",
